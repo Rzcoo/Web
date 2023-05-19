@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url(https://api.7585.net.cn/bing/api.php);
+            background-size: auto;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .head {
+            width: auto;
+            height: 90px;
+            padding: 0 100px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .head .logo {
+            display: flex;
+            width: 180px;
+            height: 90px;
+            background-image: url(./logo.png);
+            background-size: cover;
+        }
+        .head .menu {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+        .head .menu li {
+            display: flex;
+            flex-direction: column;
+            width: 80px;
+            list-style: none;
+        }
+        .head .menu a {
+            text-decoration: none;
+            width: 80px;
+            height: 90px;
+            line-height: 90px;
+            color: #fff;
+            text-align: center;
+            user-select: none;
+        }
+        .head .menu a:hover {
+            background-color: #3a3939;
+        }
+        .head .menu .more ul {
+            display: none;
+            padding: 0;
+        }
+        .head .menu .more:hover ul {
+            display: block;
+        }
+        .head .menu .more ul li a {
+            height: 70px;
+            line-height: 70px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+        .content .inputBox {
+            display: flex;
+            flex-direction: row;
+            width: 550px;
+            height: 55px;
+            margin-top: 150px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-sizing: border-box;
+            padding: 0 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content .inputBox input {
+            border: none;
+            outline: none;
+            width: 400px;
+            height: 38px;
+            font-size: 20px;
+        }
+        .content .inputBox button {
+            border: 0;
+            background-color: #fff;
+            color: rgb(10, 160, 206);
+            user-select: none;
+            cursor:pointer;font-size: 18px;
+        }
+        .content .inputBox button:hover {
+            color: rgb(10, 206, 115);
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li>
+                <a href="#">picture</a>
+            </li>
+            <li>
+                <a href="#">video</a>
+            </li>
+            <li class="more">
+                <a href="#">more</a>
+                <ul>
+                    <li>
+                        <a href="#">map</a>
+                    </li>
+                    <li>
+                        <a href="#">news</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="inputBox">
+            <input type="text" class="inputText">
+            <button>search</button>
+        </div>
+    </div>
+</body>
+</html>
